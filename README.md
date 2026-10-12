@@ -106,7 +106,7 @@ Optional future: export JSONL mirror; Notion sync of the log; LLM-assisted gener
 ## Design choices
 
 - **Stdlib only** — easy to run anywhere with no install.
-- **Deterministic daily shuffle** — RNG seeded by pack date (override with `--seed`).
+- **Deterministic daily shuffle** — pack selection RNG seeded by pack date (override with `--seed`). Multiple-choice-style items also get a **per-question choice order shuffle** (seed: pack date + question id) so the correct letter is not stuck on A; the answer key in each pack matches the shuffled order.
 - **Answer key in markdown** — facilitator-only; strip before showing the learner if needed.
 - **Diagram format is text v1** — real images can slot in later without changing IDs.
 - **Match format** uses a single correct choice that encodes the pairing (chat-button friendly).

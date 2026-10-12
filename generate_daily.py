@@ -14,6 +14,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import random
 import sqlite3
@@ -177,6 +178,46 @@ def pick_pack(questions: list[dict], conn: sqlite3.Connection, rng: random.Rando
     return chosen[:PACK_SIZE], mode
 
 
+CHOICE_KEYS = tuple("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+
+def choice_shuffle_rng(pack_date: str, question_id: str) -> random.Random:
+    """Stable per (pack date, question id) — same pack regenerates the same lettering."""
+    digest = hashlib.sha256(f"{pack_date}:{question_id}".encode()).digest()
+    return random.Random(int.from_bytes(digest[:8], "big"))
+
+
+def shuffle_choices_for_pack(q: dict, pack_date: str) -> dict:
+    """Shuffle lettered choices for output; remap answer key. Bank copy is unchanged."""
+    choices = q.get("choices")
+    if not choices:
+        return q
+
+    out = {k: v for k, v in q.items() if k not in ("choices", "answer")}
+    shuffled = [dict(c) for c in choices]
+    correct_key = q["answer"]
+    rng = choice_shuffle_rng(pack_date, q["id"])
+    rng.shuffle(shuffled)
+
+    new_answer: str | None = None
+    relabeled: list[dict] = []
+    for i, c in enumerate(shuffled):
+        if c["key"] == correct_key:
+            new_answer = CHOICE_KEYS[i]
+        relabeled.append({"key": CHOICE_KEYS[i], "text": c["text"]})
+
+    if new_answer is None:
+        raise ValueError(f"Answer key {correct_key!r} not found in choices for {q['id']}")
+
+    out["choices"] = relabeled
+    out["answer"] = new_answer
+    return out
+
+
+def prepare_pack_questions(pack: list[dict], pack_date: str) -> list[dict]:
+    return [shuffle_choices_for_pack(q, pack_date) for q in pack]
+
+
 # ── Render ───────────────────────────────────────────────────────────────────
 def render_question_md(i: int, q: dict) -> str:
     points = POINTS[q["difficulty"]]
@@ -250,6 +291,7 @@ def generate(pack_date: str, seed: int | None = None) -> Path:
     rng = random.Random(seed if seed is not None else pack_date)
     conn = connect()
     pack, mode = pick_pack(questions, conn, rng)
+    pack = prepare_pack_questions(pack, pack_date)
     streak = int(meta_get(conn, "streak"))
     total_points = int(meta_get(conn, "total_points"))
 
