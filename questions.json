@@ -1,1 +1,421 @@
-@file:/tmp/q-only.json
+[
+  {
+    "id": "ft-w01",
+    "topic": "fair_tests",
+    "difficulty": "warm",
+    "format": "mc",
+    "prompt": "You test which paper plane flies farthest. You change the wing shape — but throw harder when you like a design. Fair test?",
+    "choices": [
+      {"key": "A", "text": "Fair — wing shape is the only change"},
+      {"key": "B", "text": "Unfair — throw strength also changed"},
+      {"key": "C", "text": "Fair — farther flight proves the design"},
+      {"key": "D", "text": "Unfair — you should change throw strength too"}
+    ],
+    "answer": "B",
+    "explanation": "Two things changed: wing shape and throw strength. You can't tell which made it fly farther.",
+    "science_idea": "A fair test changes only one independent variable.",
+    "tags": ["variables", "fair_test"]
+  },
+  {
+    "id": "ft-w02",
+    "topic": "fair_tests",
+    "difficulty": "warm",
+    "format": "spot_unfair",
+    "prompt": "Bigger ice cubes melt slower? Big cube in warm water, small cube in cold water. Spot what's unfair.",
+    "choices": [
+      {"key": "A", "text": "Changed two things — size and water temperature"},
+      {"key": "B", "text": "Ice always melts the same speed"},
+      {"key": "C", "text": "Only the big cube was unfair"},
+      {"key": "D", "text": "Nothing wrong — clear difference"}
+    ],
+    "answer": "A",
+    "explanation": "Size and temperature both changed, so either (or both) could explain the result.",
+    "science_idea": "Control variables must stay the same.",
+    "tags": ["controls", "spot_unfair"]
+  },
+  {
+    "id": "ft-w03",
+    "topic": "variables",
+    "difficulty": "warm",
+    "format": "mc",
+    "prompt": "Testing if a heavier marble makes a deeper crater in sand. What is the independent variable (the one you change on purpose)?",
+    "choices": [
+      {"key": "A", "text": "Depth of the crater"},
+      {"key": "B", "text": "Mass of the marble"},
+      {"key": "C", "text": "Type of sand"},
+      {"key": "D", "text": "How you measure"}
+    ],
+    "answer": "B",
+    "explanation": "Independent = what you change. Dependent = crater depth (what you measure).",
+    "science_idea": "IV = change; DV = measure; controls = keep the same.",
+    "tags": ["IV", "DV"]
+  },
+  {
+    "id": "ft-w04",
+    "topic": "variables",
+    "difficulty": "warm",
+    "format": "mc",
+    "prompt": "Same marble crater test. You want a fair test. Which should you keep the same?",
+    "choices": [
+      {"key": "A", "text": "Only the marble mass"},
+      {"key": "B", "text": "Drop height, sand type, and how you measure"},
+      {"key": "C", "text": "Nothing — change everything for more data"},
+      {"key": "D", "text": "Only the crater depth"}
+    ],
+    "answer": "B",
+    "explanation": "Those are control variables — keep them fixed so only mass explains the crater.",
+    "science_idea": "Controls isolate the effect of the IV.",
+    "tags": ["controls"]
+  },
+  {
+    "id": "ft-w05",
+    "topic": "hypothesis",
+    "difficulty": "warm",
+    "format": "if_then_because",
+    "prompt": "Finish: If I drop a heavier marble from the same height, then the crater will be _____ because _____.",
+    "choices": [
+      {"key": "A", "text": "deeper, because more mass means more energy on impact"},
+      {"key": "B", "text": "shallower, because heavy things fall slower"},
+      {"key": "C", "text": "the same, because height didn't change"},
+      {"key": "D", "text": "deeper, because sand likes heavy marbles"}
+    ],
+    "answer": "A",
+    "explanation": "Classic If–then–because: one change, a measurable prediction, and a reason.",
+    "science_idea": "A hypothesis links cause → effect → why.",
+    "tags": ["hypothesis"]
+  },
+  {
+    "id": "ft-c01",
+    "topic": "fair_tests",
+    "difficulty": "core",
+    "format": "spot_unfair",
+    "prompt": "More sugar → sweeter tea? You add more sugar and also stir longer each time. What's the problem?",
+    "choices": [
+      {"key": "A", "text": "Unfair — sugar and stir time both changed"},
+      {"key": "B", "text": "Fair — stirring helps you taste better"},
+      {"key": "C", "text": "Unfair — tea should be cold"},
+      {"key": "D", "text": "Fair — sweetness is easy to judge"}
+    ],
+    "answer": "A",
+    "explanation": "Keep stir time the same so sugar is the only change.",
+    "science_idea": "Everyday 'tests' often hide extra variables.",
+    "tags": ["fair_test", "everyday"]
+  },
+  {
+    "id": "ft-c02",
+    "topic": "variables",
+    "difficulty": "core",
+    "format": "mc",
+    "prompt": "In the tea + sugar test, what is the dependent variable (what you measure)?",
+    "choices": [
+      {"key": "A", "text": "Amount of sugar"},
+      {"key": "B", "text": "How sweet it tastes"},
+      {"key": "C", "text": "Stir time"},
+      {"key": "D", "text": "Cup size"}
+    ],
+    "answer": "B",
+    "explanation": "DV = sweetness (measured). IV = sugar amount. Controls include stir time, tea type, temperature.",
+    "science_idea": "Name IV, DV, and controls for every investigation.",
+    "tags": ["DV"]
+  },
+  {
+    "id": "ft-c03",
+    "topic": "fair_tests",
+    "difficulty": "core",
+    "format": "match",
+    "prompt": "Match each label to the right part of a plant-growth test: 'Does more light make taller seedlings?'",
+    "pairs": [
+      {"left": "Independent variable", "right": "Amount of light"},
+      {"left": "Dependent variable", "right": "Seedling height"},
+      {"left": "Control variable", "right": "Water, soil, pot size, seed type"}
+    ],
+    "choices": [
+      {"key": "A", "text": "IV=light, DV=height, Control=water/soil/pot/seed"},
+      {"key": "B", "text": "IV=height, DV=light, Control=water only"},
+      {"key": "C", "text": "IV=water, DV=light, Control=height"},
+      {"key": "D", "text": "IV=soil, DV=pot size, Control=light"}
+    ],
+    "answer": "A",
+    "explanation": "Light is changed; height is measured; everything else stays fixed.",
+    "science_idea": "Matching IV/DV/controls is the skeleton of any fair test.",
+    "tags": ["match", "IV", "DV", "controls"]
+  },
+  {
+    "id": "ft-c04",
+    "topic": "hypothesis",
+    "difficulty": "core",
+    "format": "if_then_because",
+    "prompt": "Best hypothesis for: Does a rougher ramp surface slow a toy car?",
+    "choices": [
+      {"key": "A", "text": "If the ramp is rougher, then the car goes slower because more friction opposes motion"},
+      {"key": "B", "text": "If the car is blue, then it goes faster because blue is speedy"},
+      {"key": "C", "text": "If I like the car, then it will win"},
+      {"key": "D", "text": "If the ramp is higher, then nothing changes because height doesn't matter"}
+    ],
+    "answer": "A",
+    "explanation": "IV (roughness) → predicted DV (slower) → because (friction).",
+    "science_idea": "Friction converts kinetic energy into heat/sound — stretch link.",
+    "tags": ["hypothesis", "friction"]
+  },
+  {
+    "id": "ft-c05",
+    "topic": "fair_tests",
+    "difficulty": "core",
+    "format": "diagram_describe",
+    "prompt": "Imagine two setups drawn side by side:\n  Setup A: ball dropped from 1 m into soft sand\n  Setup B: same ball dropped from 1 m into hard floor\nQuestion: Is this a fair test of 'does sand softness affect crater depth'? What must stay the same, and what is actually being compared?",
+    "choices": [
+      {"key": "A", "text": "Fair for surface type — ball, mass, and drop height same; IV = surface softness"},
+      {"key": "B", "text": "Unfair — you must change drop height too"},
+      {"key": "C", "text": "Fair only if the floor also makes a crater"},
+      {"key": "D", "text": "Unfair — same ball means nothing can be compared"}
+    ],
+    "answer": "A",
+    "explanation": "Surface is the IV; height/mass/ball are controls. Hard floor may show 'no crater' — still a valid comparison.",
+    "science_idea": "Diagrams help spot whether only one thing differs.",
+    "tags": ["diagram", "fair_test"]
+  },
+  {
+    "id": "ft-c06",
+    "topic": "variables",
+    "difficulty": "core",
+    "format": "mc",
+    "prompt": "A student says: 'I changed the drop height AND the marble mass to get clearer results.' What should you say?",
+    "choices": [
+      {"key": "A", "text": "Good idea — more changes = clearer science"},
+      {"key": "B", "text": "Problem — two IVs at once; you can't tell which caused the effect"},
+      {"key": "C", "text": "Fine if you measure twice"},
+      {"key": "D", "text": "Only wrong if the crater gets deeper"}
+    ],
+    "answer": "B",
+    "explanation": "One IV per test. Want both? Run two separate fair tests.",
+    "science_idea": "Confounding variables muddy the causal story.",
+    "tags": ["confounding"]
+  },
+  {
+    "id": "ft-c07",
+    "topic": "hypothesis",
+    "difficulty": "core",
+    "format": "spot_unfair",
+    "prompt": "Hypothesis: 'If plants are happier, then they grow taller because happiness helps.' What's weak here?",
+    "choices": [
+      {"key": "A", "text": "'Happier' isn't measurable; IV needs a clear, measurable change"},
+      {"key": "B", "text": "Plants don't grow"},
+      {"key": "C", "text": "Height isn't a dependent variable"},
+      {"key": "D", "text": "Nothing — happiness is scientific"}
+    ],
+    "answer": "A",
+    "explanation": "Replace 'happier' with something measurable (hours of light, ml of water, etc.).",
+    "science_idea": "Operational definitions make variables testable.",
+    "tags": ["operational_definition"]
+  },
+  {
+    "id": "en-s01",
+    "topic": "energy",
+    "difficulty": "stretch",
+    "format": "mc",
+    "prompt": "Two balls, same size, different mass, dropped from the same height into sand. Heavier → deeper crater. Best science idea?",
+    "choices": [
+      {"key": "A", "text": "Heavier balls are 'stronger'"},
+      {"key": "B", "text": "Same height → similar speed; more mass → more kinetic energy on impact"},
+      {"key": "C", "text": "Sand prefers heavy balls"},
+      {"key": "D", "text": "Gravity only pulls light balls"}
+    ],
+    "answer": "B",
+    "explanation": "KE ≈ ½mv². Same speed, larger m → larger KE → deeper crater.",
+    "science_idea": "Kinetic energy depends on mass and speed.",
+    "tags": ["kinetic_energy", "stretch"]
+  },
+  {
+    "id": "en-s02",
+    "topic": "energy",
+    "difficulty": "stretch",
+    "format": "mc",
+    "prompt": "Same mass, different drop heights. Higher drop → deeper crater. What changed, and why deeper?",
+    "choices": [
+      {"key": "A", "text": "Height → more speed → more kinetic energy"},
+      {"key": "B", "text": "Height → more mass"},
+      {"key": "C", "text": "Height → less gravity"},
+      {"key": "D", "text": "Nothing about energy; sand just got softer"}
+    ],
+    "answer": "A",
+    "explanation": "Higher drop → more gravitational potential energy → converts to more speed/KE.",
+    "science_idea": "GPE → KE as the object falls.",
+    "tags": ["GPE", "KE", "stretch"]
+  },
+  {
+    "id": "en-s03",
+    "topic": "energy",
+    "difficulty": "stretch",
+    "format": "if_then_because",
+    "prompt": "Finish: If I double the drop height (same marble), then the crater will likely be _____ because _____.",
+    "choices": [
+      {"key": "A", "text": "deeper, because more GPE becomes more KE at impact"},
+      {"key": "B", "text": "shallower, because the marble gets tired"},
+      {"key": "C", "text": "unchanged, because mass stayed the same"},
+      {"key": "D", "text": "deeper, because air always pushes down harder from higher up"}
+    ],
+    "answer": "A",
+    "explanation": "Height stores GPE; impact spends KE. More height → more energy to dig the crater.",
+    "science_idea": "Energy transfer explains crater depth beyond 'it fell from higher'.",
+    "tags": ["hypothesis", "energy"]
+  },
+  {
+    "id": "en-s04",
+    "topic": "energy",
+    "difficulty": "stretch",
+    "format": "diagram_describe",
+    "prompt": "Text diagram of energy chain:\n  [High shelf] marble → falls → [just before sand] → [crater]\nLabel the main energy story from shelf to crater.",
+    "choices": [
+      {"key": "A", "text": "GPE at shelf → KE while falling → work done on sand (crater)"},
+      {"key": "B", "text": "KE at shelf → GPE while falling → light energy in sand"},
+      {"key": "C", "text": "Chemical energy in marble → heat only"},
+      {"key": "D", "text": "No energy change — gravity cancels everything"}
+    ],
+    "answer": "A",
+    "explanation": "Energy isn't destroyed; it transfers: stored (GPE) → motion (KE) → reshaping sand (work/heat).",
+    "science_idea": "Conservation of energy in a simple chain.",
+    "tags": ["energy_transfer", "diagram"]
+  },
+  {
+    "id": "ft-s05",
+    "topic": "fair_tests",
+    "difficulty": "stretch",
+    "format": "spot_unfair",
+    "prompt": "Student tests 'does wing shape affect glide distance?' Uses three shapes, throws each once outdoors on a windy day, different throwers. Biggest flaw?",
+    "choices": [
+      {"key": "A", "text": "Many uncontrolled variables: wind, thrower, single trial — hard to trust the pattern"},
+      {"key": "B", "text": "Three shapes are too few ideas"},
+      {"key": "C", "text": "Outdoors is always banned in science"},
+      {"key": "D", "text": "Wing shape can never be an IV"}
+    ],
+    "answer": "A",
+    "explanation": "Repeats, same thrower/strength, calmer conditions (or measure wind) would tighten the fair test.",
+    "science_idea": "Reliability (repeats) + controls → trustworthy conclusions.",
+    "tags": ["reliability", "stretch"]
+  },
+  {
+    "id": "ft-s06",
+    "topic": "variables",
+    "difficulty": "stretch",
+    "format": "match",
+    "prompt": "Match the science word to its job in an investigation.",
+    "pairs": [
+      {"left": "Independent variable", "right": "The one factor you deliberately change"},
+      {"left": "Dependent variable", "right": "The outcome you measure"},
+      {"left": "Control variables", "right": "Factors you keep constant"},
+      {"left": "Confounding variable", "right": "An accidental extra change that muddies results"}
+    ],
+    "choices": [
+      {"key": "A", "text": "IV=deliberate change; DV=measured outcome; Controls=kept constant; Confound=accidental extra change"},
+      {"key": "B", "text": "IV=measured outcome; DV=deliberate change; Controls=accidental; Confound=kept constant"},
+      {"key": "C", "text": "All four mean 'what you measure'"},
+      {"key": "D", "text": "IV and DV are the same thing"}
+    ],
+    "answer": "A",
+    "explanation": "Stretch vocab: naming a confound shows you can critique a messy test.",
+    "science_idea": "Precise variable language = clearer thinking.",
+    "tags": ["vocab", "match"]
+  },
+  {
+    "id": "ft-c08",
+    "topic": "fair_tests",
+    "difficulty": "core",
+    "format": "mc",
+    "prompt": "Why do scientists often repeat a measurement several times?",
+    "choices": [
+      {"key": "A", "text": "To spot odd results and see if the pattern is reliable"},
+      {"key": "B", "text": "Because one trial is illegal"},
+      {"key": "C", "text": "To change more variables each time"},
+      {"key": "D", "text": "Repeats replace the need for control variables"}
+    ],
+    "answer": "A",
+    "explanation": "Repeats improve reliability; they don't replace keeping controls constant.",
+    "science_idea": "Reliability ≠ fair test — you need both.",
+    "tags": ["reliability"]
+  },
+  {
+    "id": "ft-w06",
+    "topic": "variables",
+    "difficulty": "warm",
+    "format": "mc",
+    "prompt": "Quick check: In 'Does fertilizer amount affect plant height?', fertilizer amount is…",
+    "choices": [
+      {"key": "A", "text": "Independent variable"},
+      {"key": "B", "text": "Dependent variable"},
+      {"key": "C", "text": "A control variable"},
+      {"key": "D", "text": "Not a variable"}
+    ],
+    "answer": "A",
+    "explanation": "You change fertilizer on purpose → IV. Height → DV.",
+    "science_idea": "Name the IV from the question wording: 'Does X affect Y?' → X is IV.",
+    "tags": ["IV", "quick"]
+  },
+  {
+    "id": "ft-w07",
+    "topic": "hypothesis",
+    "difficulty": "warm",
+    "format": "if_then_because",
+    "prompt": "Pick the properly shaped hypothesis:",
+    "choices": [
+      {"key": "A", "text": "If I water plants more, then they grow taller because water helps cells expand and transport nutrients"},
+      {"key": "B", "text": "Plants are cool so they grow"},
+      {"key": "C", "text": "I think fertilizer is better"},
+      {"key": "D", "text": "Growth happens when stuff"}
+    ],
+    "answer": "A",
+    "explanation": "If (IV) → then (DV prediction) → because (reason).",
+    "science_idea": "Structure beats vague opinions.",
+    "tags": ["hypothesis"]
+  },
+  {
+    "id": "en-s05",
+    "topic": "energy",
+    "difficulty": "stretch",
+    "format": "spot_unfair",
+    "prompt": "Claim: 'Heavier always hits harder.' Test: drop a 50 g marble from 50 cm and a 200 g marble from 2 m. What's wrong if we want to isolate mass?",
+    "choices": [
+      {"key": "A", "text": "Height also changed — mass and energy from height are mixed"},
+      {"key": "B", "text": "200 g is not heavier"},
+      {"key": "C", "text": "Nothing — heavier always wins"},
+      {"key": "D", "text": "Only the light marble is unfair"}
+    ],
+    "answer": "A",
+    "explanation": "To isolate mass, keep height the same. To isolate height, keep mass the same. One IV at a time.",
+    "science_idea": "Fair tests and energy ideas work together.",
+    "tags": ["fair_test", "energy", "stretch"]
+  },
+  {
+    "id": "ft-c09",
+    "topic": "fair_tests",
+    "difficulty": "core",
+    "format": "diagram_describe",
+    "prompt": "Text 'lab sketch':\n  Cup1: 100 ml water, 1 sugar spoon, stir 10 s, taste\n  Cup2: 100 ml water, 3 sugar spoons, stir 10 s, taste\n  Cup3: 100 ml water, 5 sugar spoons, stir 30 s, taste\nWhich cup breaks the fair test, and how?",
+    "choices": [
+      {"key": "A", "text": "Cup3 — stir time jumped to 30 s while sugar also changed"},
+      {"key": "B", "text": "Cup1 — too little sugar"},
+      {"key": "C", "text": "Cup2 — middle values are always wrong"},
+      {"key": "D", "text": "All fair — water volume matched"}
+    ],
+    "answer": "A",
+    "explanation": "Cups 1–2 keep stir time fixed; Cup3 adds a second IV (stir time).",
+    "science_idea": "Scan a procedure like a diagram: find the row that breaks the pattern.",
+    "tags": ["diagram", "procedure"]
+  },
+  {
+    "id": "ft-s07",
+    "topic": "hypothesis",
+    "difficulty": "stretch",
+    "format": "mc",
+    "prompt": "A result disagrees with your hypothesis. Best next move?",
+    "choices": [
+      {"key": "A", "text": "Check fair test & measurements, then revise or reject the hypothesis — data wins"},
+      {"key": "B", "text": "Delete the data that didn't fit"},
+      {"key": "C", "text": "Change the IV secretly until it matches"},
+      {"key": "D", "text": "Hypotheses can never be wrong"}
+    ],
+    "answer": "A",
+    "explanation": "Science updates ideas when evidence is solid. First verify the method was fair.",
+    "science_idea": "Hypotheses are tools, not trophies.",
+    "tags": ["nature_of_science", "stretch"]
+  }
+]
