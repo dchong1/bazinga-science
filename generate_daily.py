@@ -1,1 +1,1 @@
-@file:/tmp/p1-generate_daily.py.txt
+PLACEHOLDER_WILL_REPLACE
