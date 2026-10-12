@@ -1,1 +1,2 @@
-LOADED_FROM_JSON
+#!/usr/bin/env python3
+"""bazinga-science stub"""

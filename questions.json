@@ -1,1 +1,19 @@
-LOADED_FROM_JSON
+[
+  {
+    "id": "ft-w01",
+    "topic": "fair_tests",
+    "difficulty": "warm",
+    "format": "mc",
+    "prompt": "You test which paper plane flies farthest. You change the wing shape — but throw harder when you like a design. Fair test?",
+    "choices": [
+      {"key": "A", "text": "Fair — wing shape is the only change"},
+      {"key": "B", "text": "Unfair — throw strength also changed"},
+      {"key": "C", "text": "Fair — farther flight proves the design"},
+      {"key": "D", "text": "Unfair — you should change throw strength too"}
+    ],
+    "answer": "B",
+    "explanation": "Two things changed: wing shape and throw strength. You can't tell which made it fly farther.",
+    "science_idea": "A fair test changes only one independent variable.",
+    "tags": ["variables", "fair_test"]
+  }
+]
