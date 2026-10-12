@@ -1,1 +1,1 @@
-PLACEHOLDER_WILL_REPLACE
+@file:/tmp/bazinga-science/generate_daily.py
