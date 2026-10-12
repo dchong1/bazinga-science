@@ -1,0 +1,176 @@
+{
+  "pack_date": "2026-10-12",
+  "mode": "steady",
+  "streak": 0,
+  "total_points": 0,
+  "points_rules": {
+    "warm": 1,
+    "core": 2,
+    "stretch": 3
+  },
+  "questions": [
+    {
+      "id": "ft-c06",
+      "topic": "variables",
+      "difficulty": "core",
+      "format": "mc",
+      "prompt": "A student says: 'I changed the drop height AND the marble mass to get clearer results.' What should you say?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Good idea — more changes = clearer science"
+        },
+        {
+          "key": "B",
+          "text": "Problem — two IVs at once; you can't tell which caused the effect"
+        },
+        {
+          "key": "C",
+          "text": "Fine if you measure twice"
+        },
+        {
+          "key": "D",
+          "text": "Only wrong if the crater gets deeper"
+        }
+      ],
+      "answer": "B",
+      "explanation": "One IV per test. Want both? Run two separate fair tests.",
+      "science_idea": "Confounding variables muddy the causal story.",
+      "tags": [
+        "confounding"
+      ],
+      "points_if_correct": 2
+    },
+    {
+      "id": "ft-w03",
+      "topic": "variables",
+      "difficulty": "warm",
+      "format": "mc",
+      "prompt": "Testing if a heavier marble makes a deeper crater in sand. What is the independent variable (the one you change on purpose)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Depth of the crater"
+        },
+        {
+          "key": "B",
+          "text": "Mass of the marble"
+        },
+        {
+          "key": "C",
+          "text": "Type of sand"
+        },
+        {
+          "key": "D",
+          "text": "How you measure"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Independent = what you change. Dependent = crater depth (what you measure).",
+      "science_idea": "IV = change; DV = measure; controls = keep the same.",
+      "tags": [
+        "IV",
+        "DV"
+      ],
+      "points_if_correct": 1
+    },
+    {
+      "id": "ft-c07",
+      "topic": "hypothesis",
+      "difficulty": "core",
+      "format": "spot_unfair",
+      "prompt": "Hypothesis: 'If plants are happier, then they grow taller because happiness helps.' What's weak here?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "'Happier' isn't measurable; IV needs a clear, measurable change"
+        },
+        {
+          "key": "B",
+          "text": "Plants don't grow"
+        },
+        {
+          "key": "C",
+          "text": "Height isn't a dependent variable"
+        },
+        {
+          "key": "D",
+          "text": "Nothing — happiness is scientific"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Replace 'happier' with something measurable (hours of light, ml of water, etc.).",
+      "science_idea": "Operational definitions make variables testable.",
+      "tags": [
+        "operational_definition"
+      ],
+      "points_if_correct": 2
+    },
+    {
+      "id": "en-s02",
+      "topic": "energy",
+      "difficulty": "stretch",
+      "format": "mc",
+      "prompt": "Same mass, different drop heights. Higher drop → deeper crater. What changed, and why deeper?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Height → more speed → more kinetic energy"
+        },
+        {
+          "key": "B",
+          "text": "Height → more mass"
+        },
+        {
+          "key": "C",
+          "text": "Height → less gravity"
+        },
+        {
+          "key": "D",
+          "text": "Nothing about energy; sand just got softer"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Higher drop → more gravitational potential energy → converts to more speed/KE.",
+      "science_idea": "GPE → KE as the object falls.",
+      "tags": [
+        "GPE",
+        "KE",
+        "stretch"
+      ],
+      "points_if_correct": 3
+    },
+    {
+      "id": "ft-c08",
+      "topic": "fair_tests",
+      "difficulty": "core",
+      "format": "mc",
+      "prompt": "Why do scientists often repeat a measurement several times?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "To spot odd results and see if the pattern is reliable"
+        },
+        {
+          "key": "B",
+          "text": "Because one trial is illegal"
+        },
+        {
+          "key": "C",
+          "text": "To change more variables each time"
+        },
+        {
+          "key": "D",
+          "text": "Repeats replace the need for control variables"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Repeats improve reliability; they don't replace keeping controls constant.",
+      "science_idea": "Reliability ≠ fair test — you need both.",
+      "tags": [
+        "reliability"
+      ],
+      "points_if_correct": 2
+    }
+  ]
+}
