@@ -1,1 +1,6 @@
-@file:/tmp/bz-push/.gitignore
+__pycache__/
+*.py[cod]
+*.db
+.DS_Store
+venv/
+.venv/
