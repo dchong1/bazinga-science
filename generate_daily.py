@@ -1,1 +1,1 @@
-@file:/tmp/bz-push/generate_daily.py
+PLACEHOLDER
